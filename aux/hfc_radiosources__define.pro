@@ -1,0 +1,66 @@
+PRO hfc_radiosources__define
+
+tmp = {hfc_radiosources, $
+             ID_RS:LONG(0), $
+             FRC_INFO_ID:LONG(0), $
+             OBSERVATIONS_ID:LONG(0), $
+             FEAT_X_PIX:LONG(0), $
+             FEAT_Y_PIX:LONG(0), $
+             FEAT_X_ARCSEC:DOUBLE(0), $
+             FEAT_Y_ARCSEC:DOUBLE(0), $
+             FEAT_HG_LONG_DEG:FLOAT(0), $
+             FEAT_HG_LAT_DEG:FLOAT(0), $
+             FEAT_CARR_LONG_DEG:FLOAT(0), $
+             FEAT_CARR_LAT_DEG:FLOAT(0), $
+             BR_X0_PIX:LONG(0), $
+             BR_Y0_PIX:LONG(0), $
+             BR_X1_PIX:LONG(0), $
+             BR_Y1_PIX:LONG(0), $
+             BR_X2_PIX:LONG(0), $
+             BR_Y2_PIX:LONG(0), $
+             BR_X3_PIX:LONG(0), $
+             BR_Y3_PIX:LONG(0), $
+             BR_X0_ARCSEC:DOUBLE(0), $
+             BR_Y0_ARCSEC:DOUBLE(0), $
+             BR_X1_ARCSEC:DOUBLE(0), $
+             BR_Y1_ARCSEC:DOUBLE(0), $
+             BR_X2_ARCSEC:DOUBLE(0), $
+             BR_Y2_ARCSEC:DOUBLE(0), $
+             BR_X3_ARCSEC:DOUBLE(0), $
+             BR_Y3_ARCSEC:DOUBLE(0), $
+             BR_HG_LONG0_DEG:FLOAT(0), $
+             BR_HG_LAT0_DEG:FLOAT(0), $
+             BR_HG_LONG1_DEG:FLOAT(0), $
+             BR_HG_LAT1_DEG:FLOAT(0), $
+             BR_HG_LONG2_DEG:FLOAT(0), $
+             BR_HG_LAT2_DEG:FLOAT(0), $
+             BR_HG_LONG3_DEG:FLOAT(0), $
+             BR_HG_LAT3_DEG:FLOAT(0), $
+             BR_CARR_LONG0_DEG:FLOAT(0), $
+             BR_CARR_LAT0_DEG:FLOAT(0), $
+             BR_CARR_LONG1_DEG:FLOAT(0), $
+             BR_CARR_LAT1_DEG:FLOAT(0), $
+             BR_CARR_LONG2_DEG:FLOAT(0), $
+             BR_CARR_LAT2_DEG:FLOAT(0), $
+             BR_CARR_LONG3_DEG:FLOAT(0), $
+             BR_CARR_LAT3_DEG:FLOAT(0), $
+             FEAT_MAX_INT:FLOAT(0), $
+             FEAT_MEAN_INT:FLOAT(0), $
+             FEAT_AREA_PIX:LONG(0), $
+             FEAT_AREA_DEG2:FLOAT(0), $
+             FEAT_AREA_MM2:FLOAT(0), $
+             EL_AXIS1:FLOAT(0), $
+             EL_AXIS2:FLOAT(0), $
+             EL_ANGLE:FLOAT(0), $
+             CC_X_PIX:LONG(0), $
+             CC_Y_PIX:LONG(0), $
+             CC_X_ARCSEC:DOUBLE(0), $
+             CC_Y_ARCSEC:DOUBLE(0), $
+             CC:"NULL", $
+             CC_LENGTH:LONG(0), $
+             SNAPSHOT_FN:"NULL", $
+             SNAPSHOT_PATH:"NULL", $
+             FEAT_FILENAME:"NULL", $
+             HELIO_RS_NUMBER:LONG(0), $
+             RUN_DATE:"NULL"}
+END

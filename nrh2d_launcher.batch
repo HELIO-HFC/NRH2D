@@ -1,0 +1,39 @@
+;IDL Batch file to launch nrh2d
+;X.Bonnin, 24-MAR-2012.
+
+;Path definitions
+main_dir = '/Users/xavier/LESIA/Solaire/HELIO/HFC/Features'
+data_dir = main_dir + '/Data/Nancay/NRH'
+src_dir = main_dir + '/Codes/NRH2D'
+config_dir = src_dir + '/src/config'
+output_dir = src_dir + '/products'
+script_dir = src_dir + '/tools/scripts'
+
+;Time range to process
+starttime = '1997-01-01'
+endtime = '1997-02-01'
+
+;Configuration filename (contains inputs)
+config_file = 'nrh2d_105_config.txt'
+
+;Add auxiliary routines
+pathsep = path_sep(/SEARCH_PATH)
+!PATH = Expand_Path('+'+src_dir+'/src/aux') + pathsep + !PATH
+
+;Options
+write_fits = 0
+write_png = 1
+cadence = 3600.0d
+freq = '164'
+GET_CLOSEST_FREQ = 1
+
+;Compile source files
+@compile_nrh2d
+
+nrh2d_launcher,starttime,endtime,$
+				cadence=cadence,freq=freq,$
+				data_dir=data_dir,$
+				config_file=config_file,config_dir=config_dir,$
+	   		    output_dir=output_dir,script_dir=script_dir,$
+				write_png=write_png,WRITE_FITS=write_fits, $
+	   		    /DOWNLOAD,/WRITE_CSV,/CLEAN_DATA,GET_CLOSEST_FREQ=GET_CLOSEST_FREQ
